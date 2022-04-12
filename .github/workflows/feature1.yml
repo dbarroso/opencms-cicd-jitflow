@@ -25,7 +25,8 @@ jobs:
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }} # Provide GITHUB_TOKEN to login into the GitHub Packages
         image-name: feature1 # Provide Docker image name
-        build-context: ./create_image
+        build-context: ./create_image/
+        dockerfile: Dockerfile
         
         
   # Second job to use the image to run the services and test it
